@@ -32,8 +32,8 @@ def split_text():
         for doc in split_docs:
             f.write(doc)
             f.write('\n\n')
-    # vectorstore = Chroma.from_documents(
-        # documents=split_docs, embedding=OllamaEmbeddings(model="llama2"))
+    vectorstore = Chroma.from_documents(
+        documents=split_docs, embedding=OllamaEmbeddings(model="llama2"))
 
 
 def get_promt():
