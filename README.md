@@ -2,5 +2,6 @@
 
 Tech stack
 1. Langchain
-2. Llama
+2. LLM - OpenAI
+3. Vectorstore - chroma
    
