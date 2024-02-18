@@ -23,7 +23,6 @@ def split_text():
     with open("file.txt", "r") as f:
         contents = f.read()
 
-    print(len(contents))
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=0, length_function=len,
                                                    is_separator_regex=False, separators=["."])
     split_docs = text_splitter.split_text(contents)
